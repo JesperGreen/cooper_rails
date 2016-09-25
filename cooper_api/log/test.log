@@ -3024,3 +3024,273 @@ Unpermitted parameter: format
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
 Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (17.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (26.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$cuLBptYxRIzxYOFe5KEyE.spcWWNwPEXHMAB1uZstxbQN9ygrS.o2"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:32 UTC], ["updated_at", 2016-09-25 16:38:32 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ ds.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "@example.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test me @yahoo.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d. .d"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ds.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "hello@example.uk"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test1234@yahoo.si"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example.eu"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/api/v0/ping" for 127.0.0.1 at 2016-09-25 18:38:32 +0200
+Processing by Api::V0::PingController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$RhGAn8dkYeJVqNuZOXRjWecO1vAomIonQ5S1NQOfxSeQmsPVw7sXq"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:32 UTC], ["updated_at", 2016-09-25 16:38:32 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (12.1ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"Mg_dzXd0Q88tgEO4w7ea8g\":{\"token\":\"$2a$10$BQm40g59IejetyvKFWEnnO9k3EybNR6PwCkXia0nwu6XBJMi1sSeS\",\"expiry\":1476031112,\"last_token\":null,\"updated_at\":\"2016-09-25T18:38:32.982+02:00\"}}"], ["updated_at", 2016-09-25 16:38:32 UTC], ["id", 77]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/performance_data" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by Api::V1::PerformanceDataController#create as JSON
+  Parameters: {"performance_data"=>{"data"=>{"message"=>"Average"}}}
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "user@random.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.4ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 77], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"Mg_dzXd0Q88tgEO4w7ea8g\":{\"token\":\"$2a$10$BQm40g59IejetyvKFWEnnO9k3EybNR6PwCkXia0nwu6XBJMi1sSeS\",\"expiry\":1476031112,\"last_token\":null,\"updated_at\":\"2016-09-25T18:38:33.133+02:00\"}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 77]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 132ms (Views: 0.2ms | ActiveRecord: 42.8ms)
+  [1m[36mPerformanceData Load (0.2ms)[0m  [1m[34mSELECT  "performance_data".* FROM "performance_data" ORDER BY "performance_data"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$9fHsBhay2tQN8kz5C2Inmeu11di4.Dz3dxYRX/7LbbNnNKSAlTDZK"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 78], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 78], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 78], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 78], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "performance_data" ("user_id", "data", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 78], ["data", "\"message\"=>\"Average\""], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"i8DUyZTSFHyDae8RkhtLAg\":{\"token\":\"$2a$10$Z82gJAin18W1xaRUnXIYE.SYAlMhcwSS2LsOidJQNbAB/jbwul9oa\",\"expiry\":1476031113,\"last_token\":null,\"updated_at\":\"2016-09-25T18:38:33.215+02:00\"}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 78]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/performance_data" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by Api::V1::PerformanceDataController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "user@random.com"], ["LIMIT", 1]]
+  [1m[36mPerformanceData Load (0.2ms)[0m  [1m[34mSELECT "performance_data".* FROM "performance_data" WHERE "performance_data"."user_id" = $1[0m  [["user_id", 78]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"i8DUyZTSFHyDae8RkhtLAg\":{\"token\":\"$2a$10$Z82gJAin18W1xaRUnXIYE.SYAlMhcwSS2LsOidJQNbAB/jbwul9oa\",\"expiry\":1476031113,\"last_token\":null,\"updated_at\":\"2016-09-25T18:38:33.284+02:00\"}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 78]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 67ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@craftacademy.se", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@craftacademy.se"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@craftacademy.se"], ["encrypted_password", "$2a$04$I4IE7vzJZSuoVG0r7Upte.Gyq7PTfbCen5iDIp9tgciIdZaaYdh0C"], ["email", "example@craftacademy.se"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"gRJTRO-1PQtFZgJBXb0HJw\":{\"token\":\"$2a$10$ifyZ3i9q3zS/ha/.OHxN.Oq0FEdC24s5t1sz6RrrX74gy5Gf2stCq\",\"expiry\":1476031113}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 79]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"gRJTRO-1PQtFZgJBXb0HJw\":{\"token\":\"$2a$10$47cbUxAi.QOrRuYipb72Qe.WOFy.puH.Om4tVWxt2HydnJLWQq6nS\",\"expiry\":1476031113,\"last_token\":\"$2a$10$ifyZ3i9q3zS/ha/.OHxN.Oq0FEdC24s5t1sz6RrrX74gy5Gf2stCq\",\"updated_at\":\"2016-09-25T18:38:33.419+02:00\"}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 79]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 124ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@craftacademy.se", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@craftacademy.se"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@craft", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@craft"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@craftacademy.se"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@craftacademy.se"], ["encrypted_password", "$2a$04$Fzr/TxZ1Lx9i6euqHc3g9uvJ8avXMPRlJT.wstdy4Iq0ObxHwQqYm"], ["email", "example@craftacademy.se"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@craftacademy.se", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@craftacademy.se"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$mNaLv4m1SSnsWJnZnWqvluZ8v1.uY/0o2z8Vw7XEevTGaMc1..F1C"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"user@random.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'user@random.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"zAS5dCcuusx_kbs1VYf7Iw\":{\"token\":\"$2a$10$wtga54WR29g/GZT0Wx6Nx.Lnfhs7EuTQ//mwkR9jq44hqvlpBeIrC\",\"expiry\":1476031113}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 81]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-09-25 16:38:33 UTC], ["last_sign_in_at", 2016-09-25 16:38:33 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 81]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"zAS5dCcuusx_kbs1VYf7Iw\":{\"token\":\"$2a$10$VaK8Ed/LF/5bEIxHYm0efOy1C3YwWOpUJk93xpnPYlfsNiBNMjyq6\",\"expiry\":1476031113,\"last_token\":\"$2a$10$wtga54WR29g/GZT0Wx6Nx.Lnfhs7EuTQ//mwkR9jq44hqvlpBeIrC\",\"updated_at\":\"2016-09-25T18:38:33.578+02:00\"}}"], ["updated_at", 2016-09-25 16:38:33 UTC], ["id", 81]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 128ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$MFkvUMzH.ja.dRrh4qReQOO6c5LGlTXBANzlgCnsl9/i/Q6wKjyHO"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"user@random.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'user@random.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Unpermitted parameter: format
+Unpermitted parameter: format
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$xB2YrA2oWTJk2MvYuIXQ0urhJKCvUAQl22LNrkHwmL3ba0wVKC482"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", 2016-09-25 16:38:33 UTC], ["updated_at", 2016-09-25 16:38:33 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2016-09-25 18:38:33 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"wrong@email.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: format
+Unpermitted parameter: format
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
